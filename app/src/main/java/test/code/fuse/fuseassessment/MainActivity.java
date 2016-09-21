@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
             try {
                 if (_exception != null) {
                     etCompanyName.setBackgroundColor(Color.RED);
-                    DialogMessage(_exception.getMessage(), "Error");
+                    Log.e(TAG, "Error");
                     return;
                 }
                 if(company == null){
